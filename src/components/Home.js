@@ -19,7 +19,7 @@ const Home = () => {
               what I have, where I am. {/* Using your personal motto */}
             </p>
             <div className="d-flex gap-3">
-              <Button variant="orange" className="custom-btn">Hire Me →</Button>
+              <Button variant="orange" className="custom-btn">Hire Me </Button>
               <Button variant="outline-secondary" className="custom-btn">Download CV</Button>
             </div>
           </Col>

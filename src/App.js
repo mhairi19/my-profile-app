@@ -26,7 +26,8 @@ function App() {
               <Nav.Link as={Link} to="/about">About</Nav.Link>
               <Nav.Link as={Link} to="/skills">Skills</Nav.Link>
               <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-              <Button variant="orange" className="ms-lg-3 custom-btn">Hire Me →</Button>
+              {/* Arrow removed below */}
+              <Button variant="orange" className="ms-lg-3 custom-btn">Hire Me</Button>
             </Nav>
           </Navbar.Collapse>
         </Container>
