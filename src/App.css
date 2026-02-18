@@ -1,38 +1,211 @@
-.App {
-  text-align: center;
+:root { --brand-orange: #ff4500; }
+
+.text-orange { color: var(--brand-orange) !important; }
+
+.btn-orange {
+  background-color: var(--brand-orange) !important;
+  color: white !important;
+  border: none;
 }
 
-.App-logo {
-  height: 40vmin;
+.btn-orange:hover { background-color: #e03d00 !important; }
+
+.hero-section {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.profile-circle-bg {
+  background: linear-gradient(to bottom, var(--brand-orange) 50%, #f8f9fa 50%);
+  border-radius: 50%;
+  padding: 20px;
+  display: inline-block;
+}
+
+.profile-img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border: 10px solid white;
+}
+
+.custom-btn { font-weight: 500; border-radius: 4px; }
+
+/* Underline for the Section Title */
+.title-underline {
+  width: 60px;
+  height: 4px;
+  background-color: #ff4500;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+/* Orange Left Border Accent */
+.border-start-orange {
+  border-left: 5px solid #ff4500 !important;
+}
+
+/* Hover Effect for Cards */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Custom Badge Color */
+.bg-orange-light {
+  background-color: rgba(255, 69, 0, 0.1) !important;
+}
+
+/* Decorative Icon Box */
+.icon-box {
+  font-size: 2.5rem;
+  background: #f8f9fa;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+/* Skill Card Styles */
+.skill-card {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.skill-icon {
+  font-size: 1.5rem;
+  background: rgba(255, 69, 0, 0.1);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.skill-accent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #ff4500;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover .skill-accent {
+  transform: scaleX(1);
+}
+
+/* Custom Form Inputs */
+.form-input-custom {
+  border: 2px solid #f8f9fa !important;
+  background-color: #f8f9fa !important;
+  padding: 12px 15px !important;
+  transition: all 0.3s ease !important;
+}
+
+.form-input-custom:focus {
+  border-color: #ff4500 !important;
+  background-color: #ffffff !important;
+  box-shadow: none !important;
+}
+
+/* Success Card Accent */
+.success-card {
+  border-bottom: 8px solid #ff4500 !important;
+}
+
+/* Info Icon Styling */
+.info-icon {
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 69, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+/* Social Icon Circles */
+.social-circle {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #dee2e6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #6c757d;
+}
+
+.social-circle:hover {
+  background-color: #ff4500;
+  border-color: #ff4500;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Vertical Branding Text */
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 8rem;
+  font-weight: 900;
+  opacity: 0.1;
+  line-height: 1;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-outline {
+  -webkit-text-stroke: 2px #ff4500;
+  color: transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Floating Pill Styling */
+.skill-pill {
+  padding: 12px 28px;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 100px;
+  font-weight: 600;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: default;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.02);
 }
 
-.App-link {
-  color: #61dafb;
+.skill-pill:hover {
+  border-color: #ff4500;
+  color: #ff4500;
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0 10px 25px rgba(255, 69, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pill-dot {
+  width: 8px;
+  height: 8px;
+  background: #ff4500;
+  border-radius: 50%;
+  margin-right: 12px;
 }
+
+/* Typography Utilities */
+.fw-black { font-weight: 900; }
+.ls-wide { letter-spacing: 3px; font-size: 0.85rem; }
